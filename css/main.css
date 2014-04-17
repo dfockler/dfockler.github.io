@@ -1,3 +1,41 @@
+/*Reset CSS*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
 body{
-	background-color: #FF0000;
+	background-color: #F2EDD8;
+}
+
+.header {
+	background-color: #035A50;
+	color: #FFF;
+	font-family: 'Asap', sans-serif;
+	font-size: 2.2em;
+	font-weight: 400;
+	padding: 10px 0 10px 20px;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+.content {
+	font-family: 'Anaheim', sans-serif;
+	font-size: 1.6em;
+	font-weight: 400;
+	background-color: #F2EDD8;
+	bottom: 40px;
+	top: 40px;
+	padding: 20px;
+	max-width: 900px;
+	margin: auto;
+}
+
+.content h1 {
+	font-size: 1.8em;
+}
+
+.article {
+	padding-bottom: 30px;
 }
