@@ -8,6 +8,16 @@
 			I Don't Quite Understand
 		</div>
 		<div class="content">
+			<div id="not-an-object" class="article">
+				<h1>Why not an Object? - 01/26/2015</h1>
+				As I've been programming and reading more code and understanding it, I've come across an interesting OOP anti-pattern. Many intermediate programmers generally have a decent grasp on the core syntax, standard libraries and other working parts of a language. What they don't yet have is a grasp on how to use OOP to it's full potential in their codebase. I've fallen into this trap, and I've seen it in some other people's code: using a deeply nested array or hash of values and passing it throughout their program while performing functions on the data inside of it.
+				<br>
+				<br>
+				If you find yourself passing a deeply nested array around in your code while performing manipulations on it's data, it's likely that you might want to turn this into an object or multiple objects. Often times it will start with a JSON object that is only going to be used in one section of the code, then a few places, then a lot of places. At that point it would make the code more readable and easy to change if you turned that gnarly array into it's own class. If you find that you are performing lots of operations on the data inside an array or hash, then it makes sense to refactor that into an object, with it's own methods and properties.
+				<br>
+				<br>
+				Structuring code using OOP in practice is actually pretty hard. In programming courses we only see things like cars inheriting from automobiles, and cats being polymorphically accessed as animals. This is great for learning but the tricky part comes when you are building a system of objects together and finding a way to make them flexible, testable, and extensible. So the next time you aren't really sure what's in that four dimensional array, maybe think about what might work better instead.
+			</div>
 			<div id="experience" class="article">
 				<h1>The Experience of Programming - 01/19/2015</h1>
 				It's weird how small changes can have big effects in our lives. Last year I had a bunch of changes. I got laid off from one job, worked doing freelance for the first time, got hired at another job, quit after a month, and am now working at another job. In between all that I moved apartments twice, got a pet cat, a different used car, and grew another beard. I finally feel like I'm settling in, although even that has it's rocky feeling moments. I guess it's hard for me to sit still at one place and be happy with it. Through this I feel like I've grown a lot as a developer and as an adult.
