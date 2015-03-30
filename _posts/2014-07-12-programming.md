@@ -1,0 +1,8 @@
+---
+layout: post
+title: Programming is Messy
+tag: programming
+---
+Sometimes I feel bad programming. It's like painting a picture and having to paint a bunch of extra stuff to get the actual picture you want. I guess that's where programming and art differ. Programming requires exact thought about implementation, whereas art does not. An artist doesn't have to think about how to dip the brush in the paint, or how to spread it on the canvas. As programmers we can't see our work's outcome until we implement it. This is a struggle for me because I want to keep my code clean and implementation doesn't often allow for that. Counters outside of for-loops feel gross, but they are often necessary. Storing values from a previous loops iteration feels gross, but that's often necessary. These things feel gross, but they are valuable tools to a programmer.
+
+I have to keep my Programming OCD under control and make sure I'm implementing things correctly. Programming is messy, and we have to deal with it. Paint will get on your hands in the process, but the outcome is worthwhile and that's important. Even the most structurally sound code has little nooks and crannies that don't feel good. These nooks and crannies are a requirement of implementation. Just as not every beautiful mathematic function can be E=mc^2, not every piece of code can be clean and simple to understand. Yet both complex mathematics and complex code are useful and important. If you're code feels ugly and complicated, like mine often does, just be sure that is has to be to and if not change it. It doesn't have to be perfect the first time around.   

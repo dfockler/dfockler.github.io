@@ -1,0 +1,10 @@
+---
+layout: post
+title: Building things that Fail
+tag: good-enough
+---
+As a web developer a lot of the time I feel like things I do are not very much like programming. I'm configuring tools, piping data into a particular part of a web page, or just generally doing the programming equivalent of plumbing. This means the problems I face are with other people's software (mostly CMSes) and not really about me solving problems. I'm plumbing someone's toilet so they can use it to go to the bathroom. It's a wonderful thing to have, a toilet or a nice website, but we've pretty much solved both of those problems. But recently I've been thinking about what goes into getting to a tried and true method to solve a problem and what that means.
+
+For me personally it's so easy to look at a finished thing and say, "Whoa that's impressive. I could never do that." When you drill down into stuff like that it's all iteration. Rome wasn't built in a day and neither is software. It takes time, iteration, and thought. It doesn't come in a flash of brilliance and it doesn't come from geniuses. You start out with something that solves your problem and you add on to it. It's that simple. Even the best software in the world isn't on version 1.0.0 forever. Bugs happen and we can't let that stop us from building things and finding errors. Most of us aren't building software that will kill someone if implemented incorrectly, god bless you if you are, but most of us aren't. It's ok to fail.
+
+Start with a prototype, an idea, a single dirty file filed with bad code. That's what refactoring is for. Use what you made, and find issues with it. Break it, test it, refactor it, rewrite it, rearchitect it. That's why code is brilliant! It's not static, it's not frozen, it's wonderfully editable. You can build anything with code, and that means you can change anything in code as well. What other parts of your existence can you build something that fails, and keep rebuilding it until it works with out any consequence but your time? It may not be good the first time, but you can always change it later.

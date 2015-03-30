@@ -1,0 +1,10 @@
+---
+layout: post
+title: The Experience of Programming
+tag: experience
+---
+It's weird how small changes can have big effects in our lives. Last year I had a bunch of changes. I got laid off from one job, worked doing freelance for the first time, got hired at another job, quit after a month, and am now working at another job. In between all that I moved apartments twice, got a pet cat, a different used car, and grew another beard. I finally feel like I'm settling in, although even that has it's rocky feeling moments. I guess it's hard for me to sit still at one place and be happy with it. Through this I feel like I've grown a lot as a developer and as an adult.
+
+You start to realize that the world is bigger than you, and that you can experience as much as you are willing to take in. Development is the same way. It took me a long time to get where I am, because of the route I took to get there, but I learned some other important stuff along the way. Programming isn't what I want to be doing all day. I want to be thinking about interesting problems and concepts. I don't want to be bent over a desk, and be asked to do things I don't really want to or think is reasonable to be doing. I'm finally on a track where I feel like I'm able to start thinking about doing the work that I want to do. I can even think more clearly about projects I want to work on and build. Coding doesn't seem any less challenging, just less daunting. I feel like I have the skills to be able to build what I want to build.
+
+All it takes is a little push in the right direction. Take time to think about what you are doing and realize that what everyone else building successful software is doing the same thing. You start out small and take time to make good design decisions throughout the project, and by the end you will end up with something that other people can get behind and make better. 

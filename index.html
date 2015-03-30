@@ -1,70 +1,11 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="css/main.css">
-		<link href='http://fonts.googleapis.com/css?family=Anaheim|Asap' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div class="header">
-			I Don't Quite Understand
+---
+layout: default
+---
+<div class="content">
+	{% for post in site.posts %}
+		<div id="{{ post.tag }}" class="article">
+			<h1>{{ post.title }} - {{ post.date | date_to_string }}</h1>
+			{{ post.content }}
 		</div>
-		<div class="content">
-			<div id="not-an-object" class="article">
-				<h1>Why not an Object? - 01/26/2015</h1>
-				As I've been programming and reading more code and understanding it, I've come across an interesting OOP anti-pattern. Many intermediate programmers generally have a decent grasp on the core syntax, standard libraries and other working parts of a language. What they don't yet have is a grasp on how to use OOP to it's full potential in their codebase. I've fallen into this trap, and I've seen it in some other people's code: using a deeply nested array or hash of values and passing it throughout their program while performing functions on the data inside of it.
-				<br>
-				<br>
-				If you find yourself passing a deeply nested array around in your code while performing manipulations on it's data, it's likely that you might want to turn this into an object or multiple objects. Often times it will start with a JSON object that is only going to be used in one section of the code, then a few places, then a lot of places. At that point it would make the code more readable and easy to change if you turned that gnarly array into it's own class. If you find that you are performing lots of operations on the data inside an array or hash, then it makes sense to refactor that into an object, with it's own methods and properties.
-				<br>
-				<br>
-				Structuring code using OOP in practice is actually pretty hard. In programming courses we only see things like cars inheriting from automobiles, and cats being polymorphically accessed as animals. This is great for learning but the tricky part comes when you are building a system of objects together and finding a way to make them flexible, testable, and extensible. So the next time you aren't really sure what's in that four dimensional array, maybe think about what might work better instead.
-			</div>
-			<div id="experience" class="article">
-				<h1>The Experience of Programming - 01/19/2015</h1>
-				It's weird how small changes can have big effects in our lives. Last year I had a bunch of changes. I got laid off from one job, worked doing freelance for the first time, got hired at another job, quit after a month, and am now working at another job. In between all that I moved apartments twice, got a pet cat, a different used car, and grew another beard. I finally feel like I'm settling in, although even that has it's rocky feeling moments. I guess it's hard for me to sit still at one place and be happy with it. Through this I feel like I've grown a lot as a developer and as an adult.
-				<br>
-				<br>
-				You start to realize that the world is bigger than you, and that you can experience as much as you are willing to take in. Development is the same way. It took me a long time to get where I am, because of the route I took to get there, but I learned some other important stuff along the way. Programming isn't what I want to be doing all day. I want to be thinking about interesting problems and concepts. I don't want to be bent over a desk, and be asked to do things I don't really want to or think is reasonable to be doing. I'm finally on a track where I feel like I'm able to start thinking about doing the work that I want to do. I can even think more clearly about projects I want to work on and build. Coding doesn't seem any less challenging, just less daunting. I feel like I have the skills to be able to build what I want to build.
-				<br>
-				<br>
-				All it takes is a little push in the right direction. Take time to think about what you are doing and realize that what everyone else building successful software is doing the same thing. You start out small and take time to make good design decisions throughout the project, and by the end you will end up with something that other people can get behind and make better. 
-			</div>
-			<div id="futurism" class="article">
-				<h1>Where Do We Go From Here - 08/31/2014</h1>
-				To think about where programming and the internet have been and where they are going is a little sad. We went from theoretical math based computers from Alan Turing, to Steve Jobs and Steve Wozniak giving us general home computing, and Mark Zuckerburg taking Facebook to your grandma, all in the course of a half-century. Where will we take computing after this?
-				<br>
-				<br>
-				Quantum computing will surely bring about a significant change to how we deal with a subset of problems but it isn't a death knell for classical computers. The internet is flourishing and broadening it's reach further and further each day. AI systems are getting smarter and better at understanding the world and us humans. Some properties of quantum mechanics are toying with the idea of instant teleportation of data, maybe it will bring about a computing communications revolution. But regardless, once every person on the planet can communicate with every other person, what will that bring to us as a civilization?
-			</div>
-			<div id="programming" class="article">
-				<h1>Programming is Messy - 07/12/2014</h1>
-				Sometimes I feel bad programming. It's like painting a picture and having to paint a bunch of extra stuff to get the actual picture you want. I guess that's where programming and art differ. Programming requires exact thought about implementation, whereas art does not. An artist doesn't have to think about how to dip the brush in the paint, or how to spread it on the canvas. As programmers we can't see our work's outcome until we implement it. This is a struggle for me because I want to keep my code clean and implementation doesn't often allow for that. Counters outside of for-loops feel gross, but they are often necessary. Storing values from a previous loops iteration feels gross, but that's often necessary. These things feel gross, but they are valuable tools to a programmer.
-				<br>
-				<br>
-				I have to keep my Programming OCD under control and make sure I'm implementing things correctly. Programming is messy, and we have to deal with it. Paint will get on your hands in the process, but the outcome is worthwhile and that's important. Even the most structurally sound code has little nooks and crannies that don't feel good. These nooks and crannies are a requirement of implementation. Just as not every beautiful mathematic function can be E=mc^2, not every piece of code can be clean and simple to understand. Yet both complex mathematics and complex code are useful and important. If you're code feels ugly and complicated, like mine often does, just be sure that is has to be to and if not change it. It doesn't have to be perfect the first time around.   
-			</div>
-			<div id="good-enough" class="article">
-				<h1>Building things that Fail - 05/14/2014</h1>
-				As a web developer a lot of the time I feel like things I do are not very much like programming. I'm configuring tools, piping data into a particular part of a web page, or just generally doing the programming equivalent of plumbing. This means the problems I face are with other people's software (mostly CMSes) and not really about me solving problems. I'm plumbing someone's toilet so they can use it to go to the bathroom. It's a wonderful thing to have, a toilet or a nice website, but we've pretty much solved both of those problems. But recently I've been thinking about what goes into getting to a tried and true method to solve a problem and what that means.
-				<br>
-				<br>
-				For me personally it's so easy to look at a finished thing and say, "Whoa that's impressive. I could never do that." When you drill down into stuff like that it's all iteration. Rome wasn't built in a day and neither is software. It takes time, iteration, and thought. It doesn't come in a flash of brilliance and it doesn't come from geniuses. You start out with something that solves your problem and you add on to it. It's that simple. Even the best software in the world isn't on version 1.0.0 forever. Bugs happen and we can't let that stop us from building things and finding errors. Most of us aren't building software that will kill someone if implemented incorrectly, god bless you if you are, but most of us aren't. It's ok to fail.
-				<br>
-				<br>
-				Start with a prototype, an idea, a single dirty file filed with bad code. That's what refactoring is for. Use what you made, and find issues with it. Break it, test it, refactor it, rewrite it, rearchitect it. That's why code is brilliant! It's not static, it's not frozen, it's wonderfully editable. You can build anything with code, and that means you can change anything in code as well. What other parts of your existence can you build something that fails, and keep rebuilding it until it works with out any consequence but your time? It may not be good the first time, but you can always change it later.
-			</div>
-			<div id="deconstruction" class="article">
-				<h1>The Case for Deconstruction - 04/16/2014</h1>
-				Often times we build and we build and we build to no end. One of the main tools programmers use is abstraction, and it is abused often. It's easy to bandy the word abstraction about and make it seem like what you are doing is useful, but our goal as developers is problem solving. When you take abstraction too far, you end up on the opposite end of where you started. You went too far past your problem to another problem 10 steps past the current one.
-				<br>
-				<br>
-				Abstraction isn't just about code reusability it's about breaking down the problem you are solving into pieces you can easily examine and solve. We ought to deconstruct our problem into smaller parts and then abstract them into a form simple enough we can think and reason about without losing the essence or logic of the problem. Code reuse is a side affect of breaking a problem into pieces and figuring out that some pieces look the same. It should not be a goal from the beginning. 
-				<br>
-				<br>
-				Design patterns are an example of this idea of abstracting too early while problem solving. Beginning programmers can easily misuse the idea of design patterns by assuming their problem fits into the abstraction of the pattern. They then hack around the design pattern to fit their problem, when instead they should deconstruct their problem first and see if the pieces fit into the design pattern. Design patterns should be used as a guide to deconstruct your problem.
-				<br>
-				<br>
-				When you come at a problem only from a 'high level' view point, you more often than not end up with lots of code hacked in place to fit into the structure you masterplanned at the beginning of the project. Deconstruction is the perfect way to start a project, and it's a better way to use abstraction. Deconstruction is an idea that fits into almost any problem solving strategy, and is super useful for more than just programming.   
-			</div>
-		</div>
-	</body>
-</html>
+	{% endfor %}
+</div>
