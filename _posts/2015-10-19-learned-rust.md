@@ -73,14 +73,16 @@ You may have already heard of enums if you are used to using a SQL database or a
 enum Bicycle {
     Fixie,
     Road(i32),
-    Recumbent { flag_color: Color, recline_angle: i32 },
+    Recumbent { flag_color: String, recline_angle: i32 },
 }
 
 fn speed(bike: Bicycle) {
     match bike { //Throw in some previous concepts
         Bicycle::Fixie => println!("{} mph", 30),
-        Bicycle::Road => println!("{} mph", 25),
-        Bicycle::Recumbent => println!("{} mph", 40), 
+        Bicycle::Road(_) => println!("{} mph", 25),
+        Bicycle::Recumbent{ flag_color: _, recline_angle: _ } => {
+            println!("{} mph", 40)
+        },
     }
 }
 {% endhighlight %}
