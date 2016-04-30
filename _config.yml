@@ -6,3 +6,9 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "default"
+assets:
+  sources:
+    - _assets
+    - _assets/fonts
+kramdown:
+  input: GFM

@@ -2,10 +2,9 @@
 layout: default
 ---
 <div class="content">
-	{% for post in site.posts %}
-		<div id="{{ post.tag }}" class="article">
-			<h1>{{ post.title }} - {{ post.date | date_to_string }}</h1>
-			{{ post.content }}
-		</div>
-	{% endfor %}
+	<div class="posts">
+    {% for post in site.posts %}
+		<a class="post" href="{{ post.url }}"><h3>{{ post.title }} - {{ post.date | date_to_string }}</h3></a>
+    {% endfor %}
+	</div>
 </div>
