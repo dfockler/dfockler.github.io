@@ -19,15 +19,30 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-pre, code {
+pre, code, kbd {
 	font-family: $code-font;
 	background-color: $code-background-color;
+
+	@media(min-width: 600px) {
+		& { 
+			-moz-tab-size: 4;
+			-o-tab-size: 4;
+			tab-size: 4; 
+		}
+		
+		& {
+			white-space: pre-wrap;
+			word-wrap: break-word;
+			overflow: auto; 
+		}
+	}
 }
 
 .header {
 	background-color: #36EFAC;
 
 	h1 {
+		margin: 0;
 		padding: 10px;
 	}
 
@@ -35,20 +50,58 @@ pre, code {
 		color: $body-dark-color;
 		text-decoration: none;
 	}
+
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
+
 .content {
-	font-size: 24px;
-	padding: 15px 20%;
+	font-size: 22px;
+
+	.article {
+		padding: 15px 20%;
+		
+		@media(max-width: 600px) {
+			padding: 15px 5%;
+		}
+	}
 
 	h1, h2, h3, h4, h5, h6 {
-		padding-top: 30px;
 		margin: 0;
+		margin-top: 30px;
 	}
 
 	p {
 		margin: 8px 0;
 		line-height: 30px;
+	}
+
+	a {
+		color: $body-dark-color;
+	}
+
+}
+
+.posts {
+	padding: 15px 10%;
+	margin: auto;
+	width: 40%;
+
+	a, a:visited {
+		color: $body-dark-color;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	@media(max-width: 600px) {
+		padding: 15px 5%;
+		margin: 0;
+		width: 90%;
 	}
 }
 

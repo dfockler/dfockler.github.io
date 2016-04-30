@@ -1,0 +1,24 @@
+---
+layout: post
+title: Complexity
+tag: complexity
+---
+After working with a large Rails project and a smaller Ember project for a while it started to dawn on me what it was that I was experiencing and what I think might be a reason that growing projects can go awry so fast. As the title implies, it all has to do with the complexity of both the systems we are building and the systems we are building with. My understanding of complexity in relation to programming is that a complex system has many more details that we need to be aware of to be able to change the code safely (i.e without affecting other parts of the codebase we didn't intend to mess with). You might be thinking, "Oh that's just dependecies", but that's only one side of the coin in the case of complexity. The other more difficult thing to think about is people as programmers.
+
+#### Dependencies
+
+Dependencies are the bane of most large systems, and [computer scientists](https://scholar.google.com/scholar?hl=en&q=software+dependencies) and professional developers alike have tried to come up with ways of either managing or getting rid of dependencies through things like functional programming, or the [dependency inversion principle](http://www.sitepoint.com/solid-ruby-dependency-inversion-principle/). Adding dependencies without caution can lead to code that is tightly coupled, prone to bugs, harder to test, and harder to work on in general. I don't mean adding a bunch of requirements into your `package.json` or `Gemfile`, although even that can sometimes lead to [problems](http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/). Mostly I mean within your code. Not only can dependencies in your code cause it to be hard to work on, it makes it more complex to think about.
+
+#### The Timely Cruft
+
+Large projects are inherently complex. They didn't start out that way, we the people created them. Dependencies are an necessity for programming, and on large projects they can become an impassable wall for further progress. What once was a well organized Rails app, over time now looks like a raging behemoth willing to spill out errors at any poke or prod. Who is to blame for this!? Well it's everyone's fault in lots of little ways. Ruby lets you subvert the 'Rails Way', so a new member of your team will invariably add cruft to one of the controllers. You added a bunch of quick and dirty code in haste one day while you were really tired, and all of a sudden six months later a new dev on the team is using that code as a template all over the place. Teams that don't take care to explain their decisions or short-comings will inevitably begin to add cruft to their projects. Just like a team that doesn't aim to work on any of their weaknesses, unmanageable complexity will begin to creep into the project.
+
+#### The People Problem
+
+Complexity for computers is easy, the code it's given is either executable able or it isn't. Complexity for people is hard and this is where our problem arises. Complex means something is literally difficult for us to understand. Some problems will always be complex, but that doesn't mean we shouldn't work on solving them. So what can we do to make things better? Comments, documentation, and [deconstruction](http://dfockler.github.io/2014/04/16/deconstruction.html) are our best friends. 
+
+There's an old programming dogma that goes, "If your code needs a comment then it's probably bad code." This is so wrong, because comments are the human component of our code. The computer doesn't care what your code looks like, if it's in C or Python, or what text-editor you are using. We write code to communicate precise logic to other people, so if we eschew all comments we remove a much needed weapon in the fight against complexity. Not all logic is intuitive and simple, so we should explain our mental model of complex problems just as much as the algorithm we write in code. 
+
+Documentation provides another layer of information for people to go to for help building their own mental model of the code. Good open source code has to have documentation that's easily accessible, and readable. The documentation is the life-blood of the project and should help guide people to understand the reasoning and the architectural decisions of the codebase. A complex project becomes less and less complex the more is written, and abstracted down into simpler models of understanding.
+
+I think it's something people tend to overlook when doing real work but it's important to always keep your brain on the alert for ways to make complex code easier to work on and understand. 
