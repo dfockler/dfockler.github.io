@@ -48,9 +48,6 @@ fn main() {
     // that we can read and write data to.
     let stream = listener.accept().unwrap().0;
     read_request(stream);
-
-    // This will close the listener and exit the program
-    drop(listener);
 }
 
 // This function takes the stream we just got from the
@@ -89,8 +86,6 @@ fn main() {
     // The .0 at the end is indexing a tuple, FYI
     let stream = listener.accept().unwrap().0;
     handle_request(stream);
-
-    drop(listener);
 }
 
 // Things change a bit in here
