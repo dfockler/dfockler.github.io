@@ -1,6 +1,10 @@
 ---
 layout: post
-title: The Expert and The Experience
-tag: expertise
+title: The Means to an End
+tag: programming-means
 ---
-I don't think a lot of programmers would call themselves experts at their job, even if that's what a hiring manager would call them. How can we measure ourselves objectively without understanding the skill levels of those around us? That's the key to a major problem in the programming culture. The real issue is that most programmers aren't good at what they are doing. Although being bad at something doesn't mean you can't get good at it. Many programmers by definition are working to build something that doesn't yet exist and doesn't have predefined problems, so everyone else in the world is also just as bad as that programmer. So how can we measure the effectiveness of a programmer, or anyone for that matter that solves unknown problems? I think that the answer lies in time, specifically the amount of time it takes a person to apply their current knowledge to the situation and realize they need more knowledge or if what they know is good enough. Programming is hard because there isn't a right answer to this tactic of discovering what knowledge is required to solve a problem. If I know Rails really well, how much and what amount of new knowledge will I need to be able to use Django? In this case and every case it's completely dependent on the person asking the question. Experience is really knowing exactly what you know and being able to compare and contrast at will your own personal knowledge with the knowledge required to complete any given task. Obviously some people are better or faster at acquiring new knowledge, but honing the skill of recalling what you know is, I think, a much more important skill to have. I'm not talking about recalling facts and figures, more like abstract ideas and concepts. Programming is 10% knowing how to make something happen and 90% knowing what to make happen. 
+Programming is a means to an end. The means can be enjoyable, thrilling and
+satifying, but they are still means. In the same way painting is the means
+by which paintings are made, programming is the means by which programs are
+made. The "end" of programming is a program that fulfills it's intended
+purpose. 
